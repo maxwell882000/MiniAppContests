@@ -1,15 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
 import PersonCard from "./componets/cards/PersonCard";
 import {useTelegram} from "./hooks/useTelegram";
 import {useEffect} from "react";
 
 function App() {
-    const {onToggleButton, tg} = useTelegram();
+    const {tg} = useTelegram();
 
     useEffect(() => {
         tg.ready();
-    }, [])
+    })
 
     return (
         <div className="App">
