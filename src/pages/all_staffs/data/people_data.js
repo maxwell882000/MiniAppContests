@@ -1,4 +1,4 @@
-export default [
+export const people_data = [
     {
         id: 1,
         alt: "hair doctor",

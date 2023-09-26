@@ -4,7 +4,7 @@ import './style/calendar.css';
 import {useState} from "react";
 import {Alert} from 'flowbite-react';
 import "./style/alert_animation.css";
-import banners from "./data/banners";
+import {banners} from "./data/banners";
 import OpenCalendar from "../../componets/pop_ups/OpenCalendar";
 
 export default function Staff() {

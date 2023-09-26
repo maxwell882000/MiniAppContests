@@ -1,4 +1,4 @@
-export default [
+export const banners = [
     {
         id: 1,
         image: "https://cdn.discordapp.com/attachments/1151418500137623617/1155844006228537466/madina2201_give_several_different_backgrounds_for_hospital_5d04f783-60a7-4e64-8fe4-cd68b2d6c25f.png",

@@ -1,6 +1,6 @@
 import PersonCard from "../../componets/cards/PersonCard";
 import "./style/text_style.css";
-import people_data from "./data/people_data";
+import {people_data} from "./data/people_data";
 
 export default function AllStaffs() {
     const objects = people_data;
