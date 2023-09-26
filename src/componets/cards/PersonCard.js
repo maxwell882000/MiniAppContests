@@ -1,26 +1,16 @@
-'use client';
+import {Link} from "react-router-dom";
 
-import {Card} from 'flowbite-react';
-
-export default function PersonCard() {
+export default function PersonCard({imageUrl, title, altImage}) {
     return (
-        <Card
-
-            imgAlt="Meaningful alt text for an image that is not purely decorative"
-            imgSrc="https://www.flowbite-react.com/images/blog/image-1.jpg"
-        >
-            <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                <p>
-                    Noteworthy technology acquisitions 2021
-                </p>
-            </h5>
-            <p className="font-normal text-gray-700 dark:text-gray-400">
-                <p>
-                    Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological
-                    order.
-                </p>
-            </p>
-        </Card>
+        <Link data-testid="flowbite-card" to="staff"
+              className="flex rounded-lg border-gray-200 bg-white shadow-md dark:bg-white bg-gray-800 flex-col hover:bg-gray-100 dark:hover:bg-gray-700">
+            <img data-testid="flowbite-card-image" alt={altImage}
+                 src={imageUrl} className="rounded-t-lg"/>
+            <div className="flex h-full flex-col justify-center gap-4 p-6">
+                <h5 className=" text-sm text-md font-bold tracking-tight dark:text-gray-900 text-white">
+                    <p>{title}</p></h5>
+            </div>
+        </Link>
     )
 }
 

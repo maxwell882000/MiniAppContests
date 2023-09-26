@@ -1,7 +1,9 @@
 import './App.css';
-import PersonCard from "./componets/cards/PersonCard";
 import {useTelegram} from "./hooks/useTelegram";
 import {useEffect} from "react";
+import {Route, Routes} from "react-router-dom";
+import AllStaffs from "./pages/all_staffs/AllStaffs";
+import Staff from "./pages/staff/Staff";
 
 function App() {
     const {tg} = useTelegram();
@@ -11,23 +13,11 @@ function App() {
     })
 
     return (
-        <div className="App">
-            <div className="w-1/5">
-                <PersonCard>
-
-                </PersonCard>
-            </div>
-            <div className="w-1/5">
-                <PersonCard>
-
-                </PersonCard>
-            </div>
-            <div className="w-1/5">
-                <PersonCard>
-
-                </PersonCard>
-            </div>
-
+        <div className="App dark:bg-gray-800" >
+            <Routes>
+                <Route index element={<AllStaffs/>}></Route>
+                <Route path={'staff'} element={<Staff/>}></Route>
+            </Routes>
         </div>
     );
 }
