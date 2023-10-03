@@ -13,7 +13,7 @@ export default function OpenCalendar({setDate}) {
             <Modal show={props.openModal === 'default'} onClose={() => props.setOpenModal(undefined)}>
                 <Modal.Header>Available dates</Modal.Header>
                 <Modal.Body>
-                    <Calendar className="dark:text-white" onChange={e => {
+                    <Calendar className="dark:text-white text-lg" onChange={e => {
                         console.log(e);
                         setDate(formatDate(e));
                         setOpenModal(undefined);

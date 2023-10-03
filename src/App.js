@@ -16,7 +16,7 @@ function App() {
         <div className="App dark:bg-gray-800" >
             <Routes>
                 <Route index element={<AllStaffs/>}></Route>
-                <Route path={'staff'} element={<Staff/>}></Route>
+                <Route path={'staff/:userId'} element={<Staff/>}></Route>
             </Routes>
         </div>
     );
