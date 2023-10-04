@@ -1,3 +1,3 @@
 export const config = {
-    domain: "http://localhost:8000"
+    domain: "https://mini-bot.onrender.com"
 }
